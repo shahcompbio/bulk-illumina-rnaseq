@@ -1,6 +1,4 @@
 {
-    "input": "\/data\/shahlab\/preskaa\/APS007_Archive\/APS007_samplesheet.csv",
-    "outdir": "\/data\/shahlab\/preskaa\/APS007_Archive\/",
     "fasta": "/data1/shahs3/reference/ref-sarcoma/GRCh38/GRCh38_full_analysis_set_plus_decoy_hla.nocolons.fa",
     "gtf": "/data1/shahs3/reference/ref-sarcoma/GRCh38/gencode.v31.annotation.gtf",
     "stringtie_ignore_gtf": true,

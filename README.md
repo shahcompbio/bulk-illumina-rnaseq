@@ -17,6 +17,9 @@ using the slurm command:
 ```angular2html
 sbatch launch_pipeline.sh
 ```
+>[Note]
+> if you want to use a different reference, make sure to remove colons in the chromosome id field (i.e., seq id)
+> which occurs in the junction annotation step: https://github.com/nf-core/rnaseq/issues/1064
 
 > [!WARNING]
 > Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_;

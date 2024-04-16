@@ -18,11 +18,14 @@ module load java/11.0.12
 ## example samplesheet
 ## technical replicates get merged ...
 samplesheet=/data1/shahs3/users/preskaa/APS022_Archive/APS022_samplesheet.csv
+## specify path to out directory
+outdir=/data1/shahs3/data_lake/...
 
 nextflow run shahcompbio/bulk-illumina-rnaseq \
   -revision 3.14.0 \
   -profile singularity,iris \
   -input ${samplesheet} \
   -c ${PWD}/conf/iris.config \
+  -outdir ${outdir} \
   -params-file nf-params.json
 
