@@ -23,8 +23,8 @@ samplesheet=${outdir}/test_samplesheet.csv
 wrkdir=${outdir}/work
 
 nextflow run shahcompbio/bulk-illumina-rnaseq \
-  -profile singularity,iris \
   -c ${PWD}/conf/iris.config \
+  -profile singularity,iris \
   -work-dir ${wrkdir} \
   -params-file nf-params.json \
   --input ${samplesheet} \
