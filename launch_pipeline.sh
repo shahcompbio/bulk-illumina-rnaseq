@@ -19,7 +19,7 @@ module load java/11.0.12
 ## technical replicates get merged ...
 samplesheet=/data1/shahs3/users/preskaa/APS022_Archive/APS022_samplesheet.csv
 ## specify path to out directory
-outdir=/data1/shahs3/data_lake/...
+outdir=/data1/shahs3/users/preskaa/bulk_illumina-rnaseq_test
 
 nextflow run shahcompbio/bulk-illumina-rnaseq \
   -revision 3.14.0 \
