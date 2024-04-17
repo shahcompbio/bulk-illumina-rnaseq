@@ -5,6 +5,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --mem=8GB
 #SBATCH --job-name=transcripts
+#SBATCH --mail-user=preskaa@mskcc.org
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm%j_snkmk.out
 
