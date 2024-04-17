@@ -23,7 +23,6 @@ samplesheet=${outdir}/test_samplesheet.csv
 wrkdir=${outdir}/work
 
 nextflow run shahcompbio/bulk-illumina-rnaseq \
-  -revision 3.14.0 \
   -profile singularity,iris \
   -c ${PWD}/conf/iris.config \
   -work-dir ${wrkdir} \
