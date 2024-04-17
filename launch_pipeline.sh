@@ -15,7 +15,6 @@ source /home/preskaa/miniconda3/bin/activate nf-core
 
 ## load modules
 module load singularity/3.7.1
-module load java/11.0.12
 ## example samplesheet
 ## technical replicates get merged ...
 outdir=/data1/shahs3/users/preskaa/bulk_illumina-rnaseq_test
@@ -26,9 +25,10 @@ wrkdir=${outdir}/work
 nextflow run shahcompbio/bulk-illumina-rnaseq \
   -revision 3.14.0 \
   -profile singularity,iris \
-  -input ${samplesheet} \
   -c ${PWD}/conf/iris.config \
-  -outdir ${outdir} \
   -work-dir ${wrkdir} \
-  -params-file nf-params.json
+  -params-file nf-params.json \
+  --input ${samplesheet} \
+  --outdir ${outdir}
+
 
