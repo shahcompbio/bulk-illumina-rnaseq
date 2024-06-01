@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,strandedness
+TCDO-SAR-034-PDX,/data1/shahs3/users/preskaa/bulk_illumina-rnaseq_test/bbsplit_test/test_fastq/TCDO-SAR-034-PDX_R1.downsampled.fastq.gz,/data1/shahs3/users/preskaa/bulk_illumina-rnaseq_test/bbsplit_test/test_fastq/TCDO-SAR-034-PDX_R2.downsampled.fastq.gz,auto
