@@ -18,10 +18,10 @@ module load singularity/3.7.1
 ## example samplesheet
 ## technical replicates get merged ...
 outdir=/data1/shahs3/users/preskaa/bulk_illumina-rnaseq_test
-samplesheet=${HOME}/bulk-illumina-rnaseq/bbsplit_samplesheet.csv
+samplesheet=${HOME}/bulk-illumina-rnaseq/resources/bbsplit_samplesheet.csv
 ref_genome=/data1/shahs3/reference/ref-sarcoma/GRCh38/v45/GRCh38.primary_assembly.genome.fa
 ref_gtf=/data1/shahs3/reference/ref-sarcoma/GRCh38/v45/gencode.v45.primary_assembly.annotation.gtf
-bbsplit_fasta_list=${HOME}/bulk-illumina-rnaseq/bbsplit_fasta.csv
+bbsplit_fasta_list=${HOME}/bulk-illumina-rnaseq/resources/bbsplit_fasta.csv
 ## specify path to out directory
 wrkdir=${outdir}/work
 
