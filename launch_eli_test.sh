@@ -28,11 +28,11 @@ wrkdir=${outdir}/work
 nextflow run shahcompbio/bulk-illumina-rnaseq \
         -c /data1/shahs3/isabl_data_lake/analyses/22/75/42275/iris.config \
         -profile singularity \
-        -work-dir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/work \
+        -work-dir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/test/work \
         -params-file /data1/shahs3/isabl_data_lake/analyses/22/75/42275/nf-params.json \
         --input /data1/shahs3/isabl_data_lake/analyses/22/75/42275/samplesheet.csv \
         -resume \
-        --outdir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/results \
+        --outdir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/test/results \
         --skip_bbsplit false \
         --bbsplit_fasta_list /data1/shahs3/isabl_data_lake/analyses/22/75/42275/bbsplit_fasta.csv \
         --save_bbsplit_reads \
