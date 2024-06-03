@@ -36,6 +36,7 @@ nextflow run shahcompbio/bulk-illumina-rnaseq \
   --stringtie_ignore_gtf true \
   --save_merged_fastq true \
   --skip_bbsplit false \
-  --bbsplit_fasta_list ${bbsplit_fasta_list}
+  --bbsplit_fasta_list ${bbsplit_fasta_list} \
+  --save_bbsplit_reads
 
 
