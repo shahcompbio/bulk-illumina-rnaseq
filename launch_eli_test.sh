@@ -7,7 +7,7 @@
 #SBATCH --job-name=transcripts
 #SBATCH --mail-user=preskaa@mskcc.org
 #SBATCH --mail-type=END,FAIL
-#SBATCH --output=slurm%j_snkmk.out
+#SBATCH --output=slurm%j_eli_test.out
 
 
 ## activate nf-core conda environment
@@ -31,7 +31,6 @@ nextflow run shahcompbio/bulk-illumina-rnaseq \
         -work-dir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/work \
         -params-file /data1/shahs3/isabl_data_lake/analyses/22/75/42275/nf-params.json \
         --input /data1/shahs3/isabl_data_lake/analyses/22/75/42275/samplesheet.csv \
-        -c iris.config \
         -resume \
         --outdir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/results \
         --skip_bbsplit false \
