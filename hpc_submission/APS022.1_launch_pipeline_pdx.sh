@@ -17,7 +17,7 @@ source /home/preskaa/miniconda3/bin/activate nf-core
 module load singularity/3.7.1
 ## example samplesheet
 ## technical replicates get merged ...
-outdir=/data1/shahs3/users/preskaa/APS022.1_Archive/rnaseq
+outdir=/data1/shahs3/users/preskaa/APS022.1_Archive/rnaseq_pdx
 samplesheet=${HOME}/bulk-illumina-rnaseq/resources/APS022.1_pdx_samplesheet.csv
 ref_genome=/data1/shahs3/reference/ref-sarcoma/GRCh38/v45/GRCh38.primary_assembly.genome.fa
 ref_gtf=/data1/shahs3/reference/ref-sarcoma/GRCh38/v45/gencode.v45.primary_assembly.annotation.gtf
