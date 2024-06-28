@@ -7,7 +7,7 @@
 #SBATCH --job-name=transcripts
 #SBATCH --mail-user=preskaa@mskcc.org
 #SBATCH --mail-type=END,FAIL
-#SBATCH --output=slurm%j_snkmk.out
+#SBATCH --output=slurm%j_eli_test.out
 
 
 ## activate nf-core conda environment
@@ -26,17 +26,16 @@ bbsplit_fasta_list=${HOME}/bulk-illumina-rnaseq/resources/bbsplit_fasta.csv
 wrkdir=${outdir}/work
 
 nextflow run shahcompbio/bulk-illumina-rnaseq \
-  -c ${PWD}/conf/iris.config \
-  -profile singularity,iris \
-  -work-dir ${wrkdir} \
-  --input ${samplesheet} \
-  --outdir ${outdir} \
-  --fasta ${ref_genome} \
-  --gtf ${ref_gtf} \
-  --stringtie_ignore_gtf true \
-  --save_merged_fastq true \
-  --skip_bbsplit false \
-  --bbsplit_fasta_list ${bbsplit_fasta_list} \
-  --save_bbsplit_reads
+        -c /data1/shahs3/isabl_data_lake/analyses/22/75/42275/iris.config \
+        -profile singularity \
+        -work-dir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/test/work \
+        -params-file /data1/shahs3/isabl_data_lake/analyses/22/75/42275/nf-params.json \
+        --input /data1/shahs3/isabl_data_lake/analyses/22/75/42275/samplesheet.csv \
+        -resume \
+        --outdir /data1/shahs3/isabl_data_lake/analyses/22/75/42275/test/results \
+        --skip_bbsplit false \
+        --bbsplit_fasta_list /data1/shahs3/isabl_data_lake/analyses/22/75/42275/bbsplit_fasta.csv \
+        --save_bbsplit_reads \
+        -with-report
 
 
