@@ -29,7 +29,7 @@ mkdir -p ${outdir}
 cd ${outdir}
 
 nextflow run shahcompbio/bulk-illumina-rnaseq \
-  -c ${PWD}/conf/iris.config \
+  -c ${HOME}/bulk-illumina-rnaseq/conf/iris.config \
   -profile singularity,iris \
   -work-dir ${wrkdir} \
   --input ${samplesheet} \
