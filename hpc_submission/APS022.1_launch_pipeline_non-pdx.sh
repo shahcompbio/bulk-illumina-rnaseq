@@ -37,6 +37,7 @@ nextflow run shahcompbio/bulk-illumina-rnaseq \
   --fasta ${ref_genome} \
   --gtf ${ref_gtf} \
   --stringtie_ignore_gtf true \
-  --save_merged_fastq true
-
+  --save_merged_fastq true \
+  --min_mapped_reads 1.0 \
+  -resume
 

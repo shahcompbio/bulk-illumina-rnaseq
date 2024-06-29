@@ -40,6 +40,8 @@ nextflow run shahcompbio/bulk-illumina-rnaseq \
   --save_merged_fastq true \
   --skip_bbsplit false \
   --bbsplit_fasta_list ${bbsplit_fasta_list} \
-  --save_bbsplit_reads
+  --save_bbsplit_reads \
+  --min_mapped_reads 1.0 \
+  -resume
 
 
